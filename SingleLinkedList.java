@@ -8,7 +8,7 @@ public class SingleLinkedList {
 		private Node next;
 		
 		public Node(){
-			//this.data = null;
+			
 			this.next =null;
 		}
 		
@@ -40,9 +40,7 @@ public class SingleLinkedList {
 	private int counter = 0;
 	
 	public SingleLinkedList(){
-		//this.head = null;
-		//this.tail = this.head;
-		//this.counter = 0;
+		
 	}
 	
 	
@@ -210,7 +208,7 @@ public class SingleLinkedList {
 		sll.traverse();
 		sll.delete(89);						//check deletion_at_end
 		sll.traverse();
-		sll.delete(2000);						//check deletion_key_not_present
+		sll.delete(2000);					//check deletion_key_not_present
 		sll.traverse();
 	}
 	
