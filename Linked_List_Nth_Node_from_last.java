@@ -1,4 +1,4 @@
-
+//change name of the file to "SingleLinkedList.java" before using this code.
 public class SingleLinkedList {
 	
 	
