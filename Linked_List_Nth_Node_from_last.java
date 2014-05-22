@@ -1,5 +1,3 @@
-//change name of the file to "SingleLinkedList" before using this code
-
 
 public class SingleLinkedList {
 	
