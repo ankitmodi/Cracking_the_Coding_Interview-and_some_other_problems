@@ -31,7 +31,7 @@ public class Unique_String
 		
 		if(result ==0)
 		{
-			System.out.println(tmp + " : Each character UNIQUE");
+			System.out.println("Each character UNIQUE");
 		}
 		else
 		{
