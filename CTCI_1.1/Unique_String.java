@@ -1,4 +1,5 @@
 //Write an algorithm to check if a string has all unique characters
+//without using any data structure : O(n^2)
 import java.util.Scanner;
 public class Unique_String 
 {
