@@ -10,9 +10,9 @@ public class RemoveDuplicate {
 		int size = myList.size();
 		boolean[] index = new boolean[size];
 		
-		int i, checker = 0;
+		int checker = 0;
 		
-		for(i=0; i<size; i++)
+		for(int i=0; i<size; i++)
 		{
 			int val = (Integer) myList.get(i);
 			if((checker & (1 << val)) > 0)
@@ -26,7 +26,7 @@ public class RemoveDuplicate {
 		}
 		
 		int count=0;
-		for(i=0; i<size; i++)
+		for(int i=0; i<size; i++)
 		{
 			if(index[i])
 			{
