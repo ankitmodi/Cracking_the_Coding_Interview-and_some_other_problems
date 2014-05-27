@@ -1,10 +1,40 @@
 // Implement an algorithm to delete a Node in the middle of a singly linked list,
 // given only acces to that node.
-
 public class SingleLinkedList {
 	
 	
 	
+	private class Node{
+		private int data;
+		private Node next;
+		
+		public Node(){
+			
+			this.next =null;
+		}
+		
+		public Node(int elem){
+			this.data = elem;
+			this.next =null;
+		}
+		
+		public int getData(){
+			return data;
+		}
+		
+		public void setData(int inputData){
+			data = inputData;
+		}
+		
+		public Node getNext(){
+			return next;
+		}
+		
+		public void setNext(Node inputNode){
+			next = inputNode;
+		}
+		
+	}
 	
 	private Node head = null;
 	private Node tail = null;
@@ -33,7 +63,7 @@ public class SingleLinkedList {
 			System.out.println(" Linked List is empty");
 		}
 		else{
-			for(Node n=head; n!=null;n=n.getNext()){
+			for(Node n=head; n!=null;n=n.next){
 				System.out.print(" "+ n.getData());
 			}
 			System.out.println("\nsize:  " + this.size());
@@ -50,13 +80,13 @@ public class SingleLinkedList {
 		}
 		else{
 			Node temp = head;
-			while(temp.getNext() != null){
-				temp=temp.getNext();
+			while(temp.next != null){
+				temp=temp.next;
 			}
 			
 			Node inputNode = new Node(elem);
-			temp.setNext(inputNode);
-			inputNode.setNext(tail);
+			temp.next = inputNode;
+			inputNode.next = tail;
 		}
 		counter++;
 	}
@@ -73,6 +103,7 @@ public class SingleLinkedList {
 	
 	
 	
+	
 	public static void main(String[] args){
 		SingleLinkedList sll = new SingleLinkedList();
 		sll.addLast(1);
@@ -82,45 +113,13 @@ public class SingleLinkedList {
 		sll.addLast(5);
 		
 		sll.traverse();
-		Node head = sll.getHead();
-		Node mid = head.getNext().getNext(); // the middle node
+		Node start = sll.getHead();
+		Node mid = start.getNext().getNext(); // the middle node
 		deleteMid(mid);
 		sll.traverse();
 	}
 	
-}
+	
+	
 
-
-
-
-class Node{
-	private int data;
-	private Node next;
-	
-	public Node(){
-		
-		this.next =null;
-	}
-	
-	public Node(int elem){
-		this.data = elem;
-		this.next =null;
-	}
-	
-	public int getData(){
-		return data;
-	}
-	
-	public void setData(int inputData){
-		data = inputData;
-	}
-	
-	public Node getNext(){
-		return next;
-	}
-	
-	public void setNext(Node inputNode){
-		next = inputNode;
-	}
-	
 }
