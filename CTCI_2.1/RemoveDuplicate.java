@@ -1,4 +1,6 @@
 //Remove duplicates from an unsorted linked list
+////works for integers between 1 and 32
+
 
 import java.util.*;
 public class RemoveDuplicate {
