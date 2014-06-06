@@ -91,18 +91,30 @@ public class MyStackLL
 				e.printStackTrace();
 			}
 		}
-		Node n =bottom;
-		while(n.next != top)
+		
+		Node tmp;
+		//when size is 1
+		if(top == bottom)
 		{
-			n = n.next;
+			tmp = top;
+			top = bottom = null;
+			return tmp.data;
 		}
-		Node tmp = top;
-		Object tmp_data = tmp.data;
-		top = n;
-		top.next = null;
-		System.out.println("popped: " + tmp_data);
-		return tmp_data;
-	}
+		else
+		{
+			Node n =bottom;
+			while(n.next != top)
+			{
+				n = n.next;
+			}
+			Object popped_data = top.data;
+			top = n;
+			top.next = null;
+			System.out.println("popped: " + popped_data);
+			return popped_data;
+
+		}
+			}
 	
 	
 	
@@ -151,6 +163,7 @@ public class MyStackLL
 		stack.traverse();
 		System.out.println("isEmpty(): " + stack.isEmpty());
 		stack.size();
+		
 		
 		
 	}
