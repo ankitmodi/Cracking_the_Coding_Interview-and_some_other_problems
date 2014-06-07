@@ -135,6 +135,7 @@ public class ThreeStack
 	
 	
 	
+	//stack3 grows leftwards
 	public void push3(int s)
 	{
 		if(top3-top2-1==0)
