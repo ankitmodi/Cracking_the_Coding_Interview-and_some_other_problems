@@ -86,38 +86,6 @@ public class Queue
 		return tmp;
 	}
 	
-	
-
-	/*
-	public static void main(String args[])
-	{
-		Queue queue = new Queue();
-		System.out.println(queue.isEmpty());
-		queue.size();
-		//Object s = queue.dequeue();
-		
-		queue.enqueue(new Node("a")) ;
-		queue.enqueue(new Node("b")) ;
-		queue.enqueue(new Node("c")) ;
-		queue.enqueue(new Node("d")) ;
-		queue.traverse();
-		System.out.println(queue.isEmpty());
-		queue.size();
-		
-		
-		Node s = queue.dequeue();
-		queue.traverse();
-		System.out.println(queue.isEmpty());
-		queue.size();
-		
-		s = queue.dequeue();
-		queue.traverse();
-		System.out.println(queue.isEmpty());
-		queue.size();
-		
-		
-	}*/
-
 }
 
 
