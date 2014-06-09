@@ -37,6 +37,7 @@ public class Queue
 	// traverse() has been written just to check if the implementaton works correctly
 	public void traverse()
 	{
+		System.out.print("Queue: ");
 		for(Node n = front; n !=null; n = n.getNext())
 		{
 			System.out.print(" " +n.getData());
