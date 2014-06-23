@@ -3,7 +3,6 @@ class Node
 	private Object data;
 	private Node leftchild;
 	private Node rightchild;
-	private Node next;
 
 	
 	
@@ -12,7 +11,6 @@ class Node
 
 		this.leftchild = null;
 		this.rightchild = null;
-		this.next = null;
 	}
 
 	
@@ -22,7 +20,6 @@ class Node
 		this.data = elem;
 		this.leftchild = null;
 		this.rightchild = null;
-		this.next = null;
 	}
 
 	
@@ -68,17 +65,5 @@ class Node
 	}
 
 	
-	
-	public Node getNext()
-	{
-		return next;
-	}
-
-	
-	
-	public void setNext(Node inputNode)
-	{
-		next = inputNode;
-	}
 
 }
