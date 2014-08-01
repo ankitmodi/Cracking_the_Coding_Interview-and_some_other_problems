@@ -1,3 +1,5 @@
+//Not a very good method as string concatenation is costly
+
 import java.util.*;
 
 public class ConciseString 
