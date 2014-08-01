@@ -11,7 +11,7 @@ public class ConciseString2
 		String str = input.next();
 		
 		int size = ConciseStringSize(str);
-		System.out.println("Size is: " + size);
+		//System.out.println("Size of concised string is: " + size);
 		
 		if(size < str.length())
 		{
