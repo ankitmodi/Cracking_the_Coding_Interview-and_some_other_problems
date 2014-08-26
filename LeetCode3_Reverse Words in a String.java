@@ -16,18 +16,16 @@ public class Solution
         {
             
             
-            if(parts[i].trim().isEmpty())
+            if(parts[i].isEmpty())
             { continue; }
             
             if(i==0)
             {
                 result = parts[i] + result ;
-                parts[i]= parts[i].trim();
             }
             else
             {
                 result = parts[i] + " " + result ;
-                parts[i]= parts[i].trim();
             }
         }
         return result;
