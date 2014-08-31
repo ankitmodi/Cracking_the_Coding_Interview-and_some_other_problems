@@ -26,7 +26,7 @@ public class Solution {
             if(a != null && a.next != null && b != null && b.next != null && b.next.next != null)
             {
                 a = a.next;
-                b =b.next.next;
+                b = b.next.next;
                 
                 if(a==null || b==null)
                 {
