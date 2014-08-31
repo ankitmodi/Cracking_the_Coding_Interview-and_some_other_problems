@@ -12,7 +12,6 @@ public class Solution
 {
     public int searchInsert(int[] A, int target) 
     {
-        int a = Arrays.asList(A).indexOf(target);
         int res =-1;
         if(target <= A[0])
         {
