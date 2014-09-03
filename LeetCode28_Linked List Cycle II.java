@@ -14,6 +14,17 @@ Can you solve it without using extra space? */
  *     }
  * }
  */
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
 public class Solution 
 {
     public ListNode detectCycle(ListNode head) 
@@ -51,7 +62,7 @@ public class Solution
         ListNode temp = head;
         while(temp!=a)
         {
-            temp=temp.next;
+            temp = temp.next;
             a = a.next;
         }
         return temp;
