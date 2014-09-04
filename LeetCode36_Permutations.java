@@ -24,7 +24,7 @@ public class Solution
         return res;
     }
     
-    public List<List<Integer>> permutations(List<Integer> prefix, List<Integer> nums, List<List<Integer>>res)
+    public List<List<Integer>> permutations(List<Integer> prefix, List<Integer> nums, List<List<Integer>> res)
     {
         int n = nums.size();
         if(n==0)
