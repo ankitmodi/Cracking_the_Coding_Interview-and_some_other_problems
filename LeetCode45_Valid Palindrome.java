@@ -17,9 +17,13 @@ public class Solution
     public boolean isPalindrome(String s) 
     {
         int len = s.length();
+        
         s = s.toLowerCase();
+        
         String pattern = "[0-9a-z]";
+        
         boolean res = true;
+        
         int i=0, j=len-1;
         while(i<j)
         {
