@@ -18,7 +18,7 @@ public class Solution
         int len = s.length();
         List<String> res = new ArrayList<String>();
         
-        if(!isWordBreak(s, dict))
+        if(!isWordBreakPossible(s, dict))
         {
             return res;
         }
@@ -108,7 +108,7 @@ public class Solution
     }
     
     
-    public boolean isWordBreak(String s, Set<String> dict) 
+    public boolean isWordBreakPossible(String s, Set<String> dict) 
     {
         int len = s.length();
         boolean[] checkTillIndex = new boolean[len+1];
