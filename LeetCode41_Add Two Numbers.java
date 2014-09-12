@@ -14,6 +14,17 @@ Output: 7 -> 0 -> 8*/
  *     }
  * }
  */
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
 public class Solution 
 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) 
@@ -43,12 +54,12 @@ public class Solution
             }
             temp += carry;
             
-            carry = temp/10;
-            
             x.next = new ListNode(temp%10);
             x = x.next;
             
+            carry = temp/10;
         }
+        
         if(carry > 0)
         {
             x.next = new ListNode(carry);
