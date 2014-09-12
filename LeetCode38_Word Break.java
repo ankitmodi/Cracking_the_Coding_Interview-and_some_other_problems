@@ -11,7 +11,46 @@ Return true because "leetcode" can be segmented as "leet code". */
 import java.util.*;
 public class Solution 
 {
-    public static boolean wordBreak(String s, Set<String> dict) 
+    
+    // better solution; using Dynamic Programming
+    public boolean wordBreak(String s, Set<String> dict) 
+    {
+        int len = s.length();
+        boolean[] checkTillIndex = new boolean[len+1];
+        
+        checkTillIndex[0] = true;
+        
+        for(int i=0; i<len; i++)
+        {
+            if(!checkTillIndex[i])
+            {
+                continue;
+            }
+            
+            for(String word: dict)
+            {
+                int wordLen = word.length();
+                int end = i + wordLen ;
+                
+                if(end > len)
+                {
+                    continue;
+                }
+                if(checkTillIndex[end])
+                {
+                    continue;
+                }
+                if(s.substring(i, end).equals(word))
+                {
+                    checkTillIndex[end] = true;
+                }
+            }
+        }
+        return checkTillIndex[len];
+    }
+    
+    //naive solution; high time complexity
+    public static boolean wordBreak2(String s, Set<String> dict) 
     {
         if(dict.contains(s))
         {
