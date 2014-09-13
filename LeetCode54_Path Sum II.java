@@ -62,8 +62,7 @@ public class Solution
         {
             if(sum == root.val)
             {
-                m += String.valueOf(root.val)+" ";
-                m = m.trim();
+                m += String.valueOf(root.val);
                 String[] parts = m.split(" ");
                 List a = new ArrayList<Integer>();
                 for(int i=0; i<parts.length; i++)
