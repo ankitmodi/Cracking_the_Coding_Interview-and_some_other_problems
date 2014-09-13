@@ -37,6 +37,15 @@ return
  *     TreeNode(int x) { val = x; }
  * }
  */
+/**
+ * Definition for binary tree
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
 public class Solution 
 {
     public List<List<Integer>> pathSum(TreeNode root, int sum) 
@@ -57,16 +66,16 @@ public class Solution
         
         if(root.left==null && root.right!=null)
         {
-            pathSumHelper(root.right, sum-root.val, res, m + String.valueOf(root.val)+" ");
+            pathSumHelper(root.right, sum-root.val, res, m+String.valueOf(root.val)+" ");
         }
         else if(root.left!=null && root.right==null)
         {
-            pathSumHelper(root.left, sum-root.val, res, m + String.valueOf(root.val)+" ");
+            pathSumHelper(root.left, sum-root.val, res, m+String.valueOf(root.val)+" ");
         }
         else if(root.left!=null && root.right!=null)
         {
-            pathSumHelper(root.left, sum-root.val, res, m + String.valueOf(root.val)+" ");
-            pathSumHelper(root.right, sum-root.val, res, m + String.valueOf(root.val)+" ");
+            pathSumHelper(root.left, sum-root.val, res, m+String.valueOf(root.val)+" ");
+            pathSumHelper(root.right, sum-root.val, res, m+String.valueOf(root.val)+" ");
         }
         
         else
