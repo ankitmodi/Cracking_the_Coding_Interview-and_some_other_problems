@@ -28,12 +28,20 @@ return
  *     TreeNode(int x) { val = x; }
  * }
  */
+/**
+ * Definition for binary tree
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
 public class Solution 
 {
     public List<List<Integer>> pathSum(TreeNode root, int sum) 
     {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
-        List<Integer> m = new ArrayList<Integer>();
         if(root==null)
         {
             return res;
