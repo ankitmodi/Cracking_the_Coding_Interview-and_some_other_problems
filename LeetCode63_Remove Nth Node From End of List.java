@@ -46,10 +46,7 @@ public class Solution
             b=b.next;
             a=a.next;
         }
-        if(a.next!=null)
-        {
-            a.next = a.next.next;
-        }
+        a.next = a.next.next;
         
         return dummy.next;
     }
