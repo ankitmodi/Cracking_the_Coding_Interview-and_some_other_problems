@@ -1,7 +1,7 @@
 /*Given a linked list of integers, remove all duplicates.*/
 
 import java.util.*;
-public class RemoveDupFromLL 
+public class InMobi3 
 {
 	public static void main(String args[])
 	{
