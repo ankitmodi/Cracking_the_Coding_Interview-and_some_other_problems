@@ -12,7 +12,9 @@ public class InMobi2
 		// TODO Auto-generated method stub
 		//int[] arr = {5, 8, 11, 14, 17, 20};
 		//int[] arr = {5, 10, 20, 40, 80, 160};
-		int[] arr = {5, 8, 13, 21, 34, 55};
+		//int[] arr = {5, 8, 13, 21, 34, 55};
+		int[] arr = {64, 32, 16, 8, 4};
+
 		
 		int result = 0;
 		
@@ -27,7 +29,7 @@ public class InMobi2
 			
 		else if(inGP(arr))
 		{
-			double res = arr[arr.length-1] * (arr[1] / arr[0]);
+			double res = arr[arr.length-1] * ((double)arr[1] / arr[0]);
 			System.out.println("GP: " + (int)res); 
 		}
 		
