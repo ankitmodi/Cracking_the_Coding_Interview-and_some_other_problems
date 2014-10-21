@@ -1,6 +1,6 @@
 /*4. Given a number, get all possible substrings using the digits of this number and if the product of 
 digits in one subset is same with the another, then return false, else return true.
-e.g. 345={3,4,34,45,35,345}
+e.g. 345={3,4,34,45,345}
 products are{3,4,5,12,20,15,60} hence true
 3426={3,4,2,6,34,42,26,....}
 product ={3,4,2,6,12,8,12,..} hence false. (products of 34 and 26 are same)
