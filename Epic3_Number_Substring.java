@@ -1,7 +1,4 @@
-/*You have to print all possible combinations of phone numbers. 
- * The length of the number will be given. Also 3 digits will be given, which can not be used.
- *  No two consecutive digits would be same. A number containing 4 would always have 4 in the beginning.
-#4. Given a number, get all possible substrings using the digits of this number and if the product of 
+/*4. Given a number, get all possible substrings using the digits of this number and if the product of 
 digits in one subset is same with the another, then return false, else return true.
 e.g. 345={3,4,34,45,35,345}
 products are{3,4,5,12,20,15,60} hence true
