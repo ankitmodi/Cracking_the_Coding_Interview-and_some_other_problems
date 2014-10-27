@@ -1,5 +1,6 @@
 /*
- * Sticky Problem (Programming)
+
+Sticky Problem (Programming)
 
 As a teacher for a 1st grade class, you plan an activity for the kids to introduce them to what a rectangle is.
 
@@ -52,6 +53,29 @@ Output:
 Explanation:
 
 The base  (4) and the 2 sides (3) have no error, so the new side also will not have any error, and will be equal to the base.
+
+ 
+
+2)
+
+Input:
+
+10,12
+
+4,8
+
+3,6
+
+ 
+
+Output:
+
+10,13
+
+ 
+
+Explanation:
+The best case is when the base is of size 10, and the sides are equal (possible in the range (4,6) ). Worst is when the base is 12, and the difference in 2 sides is 5 (the sides have size 8 and 3)
  */
 import java.io.*;
 import java.util.*;
