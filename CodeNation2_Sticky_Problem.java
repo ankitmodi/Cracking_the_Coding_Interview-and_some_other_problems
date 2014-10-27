@@ -89,8 +89,8 @@ public class CodeNation2_Sticky_Problem
 	public static void main(String[] args) throws IOException
 	{
 		// TODO Auto-generated method stub
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Enter base: ");
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	System.out.println("Enter base stick: ");
         String line = br.readLine();
         //System.out.println(line);
         
@@ -99,14 +99,14 @@ public class CodeNation2_Sticky_Problem
         int opp_min = Integer.parseInt(parts[0]);
         int opp_max = Integer.parseInt(parts[1]);
         
-        System.out.println("Enter stick1: ");
+        System.out.println("Enter side stick1: ");
         line = br.readLine();
         parts = line.split(",");
         int s1_min = Integer.parseInt(parts[0]);
         int s1_max = Integer.parseInt(parts[1]);
         //System.out.println(line);
         
-        System.out.println("Enter stick2: ");
+        System.out.println("Enter side stick2: ");
         line = br.readLine();
         parts = line.split(",");
         int s2_min = Integer.parseInt(parts[0]);
