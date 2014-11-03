@@ -9,7 +9,7 @@ Sample Input: {"expr":{"sum":{"elem":["4","6","7","3"]}}}
 
  */
 import java.util.*;
-public class BrowserStack1_JSON2 
+public class BrowserStack5_JSON2 
 {
 
 	/**
